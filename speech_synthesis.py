@@ -5,9 +5,9 @@ from __future__ import print_function
 import requests
 import os
 
-import token
+import get_token
 
-token = token.get_token()
+token = get_token.get_token()
 
 
 # -----------------------
@@ -21,7 +21,7 @@ def from_plaintext(token, text, info):
 
 data = from_plaintext(token, 'お元気ですか？', {
     'lang': 'ja_JP',
-    'speaker_id': 'ja_JP-F0001-H00T',
+    'speaker_id': 'ja_JP-F0006-C53T',
     # optional
     'speed': 0,
     'pitch': 0,
